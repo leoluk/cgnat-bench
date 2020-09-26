@@ -27,6 +27,7 @@ func main() {
 		c, err := s.Accept()
 		if err != nil {
 			log.Printf("accept error: %v", err)
+			return
 		}
 		defer c.Close()
 
